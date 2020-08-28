@@ -10,14 +10,42 @@
   <div class="container">
     <h1 class="text-center">Pizza Parlor</h1>
     <div class="group-std">
-      <h3>Build your pizza below</h3>
+      <h3 class="text-center">Build Your Pizza Below</h3>
       <form id="pizzaSelection">
         <div class="form-group">
-          <label for="pizzaSize">Size</label>
-          <input id="pizzaSize" class="form-control" type="text">
+          <label for="pizzaName">Name</label>
+          <input id="pizzaName" class="form-control" type="text">
         </div>
+        <div class="form-group">
+          <label for="pizzaSize">Size</label>
+          <select id="pizzaSize" class="form-control">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pizzaToppings">Pick some toppings</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="topping" value="pepperoni"> Pepperoni
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="topping" value="basil"> Basil
+            </label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="topping" value="green peppers"> Green Peppers
+          </div>
+        </div>
+        <br>
         <button type="submit">SUBMIT</button>
       </form>
+    </div>
+    <div id="pizzaResult" class="group-std">
+      <h3 class="text-center">Your Pizza</h3>
     </div>
   </div>
 </body>
