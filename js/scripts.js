@@ -53,7 +53,8 @@ $(document).ready(function() {
     console.log(pizzaSize);
     console.log(pizzaToppings);
     const myPizza = new Pizza(pizzaName,pizzaSize,pizzaToppings);
-    console.log(myPizza.cost());
+    $("#pizzaCost").text(myPizza.cost());
+    $("#pizzaResult").show();
   })
 
 });
