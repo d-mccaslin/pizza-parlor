@@ -37,8 +37,6 @@ function Topping(name,cost) {
 }
 */
 
-
-
 // Tests
 
 let myPizza = new Pizza(smallSize, toppings);
@@ -46,6 +44,13 @@ console.log(myPizza);
 myPizza.cost();
 
 
+/* To Do
+
+- basic ui with results displays
+- update topping BL
+- create your own topping?
+
+*/
 
 /* Questions
 
