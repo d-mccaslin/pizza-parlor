@@ -1,13 +1,13 @@
-// Constructor for Pizza
+// Business Logic for Pizza
 function Pizza(Size,toppings) {
   this.Size = Size,
-  this.topping = toppings,
+  this.topping = toppings
 }
 
 Pizza.prototype.cost = function() {
   //let baseCost;
-  const size = this.size;
   /*
+  const size = this.size;
   if (size == "small") {
     baseCost = 10;
   } else if (size == "medium") {
@@ -16,12 +16,21 @@ Pizza.prototype.cost = function() {
     baseCost = 20;
   }
   */
-  const toppingCost = this.toppings.length;
-  this.cost = this.Size.baseCost + toppingCost;
+  const baseCost = this.Size.baseCost;
+  console.log(baseCost);
+  const toppingCost = this.toppings.length * 2;
+  console.log(toppingCost);
+  this.cost = baseCost + toppingCost;
 }
 
-// Constructor for Size
+// Business Logic for Size
 function Size(name,baseCost) {
   this.name = name,
   this.baseCost = baseCost,
 }
+
+const smallSize = new Size("small",10);
+const mediumSize = new Size("medium",15);
+const largeSize = new Size("large",20);
+
+
