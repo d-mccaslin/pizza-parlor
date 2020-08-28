@@ -14,14 +14,11 @@
       <form id="pizzaSelection">
         <div class="form-group">
           <label for="pizzaName">Name</label>
-          <input id="pizzaName" class="form-control" type="text">
+          <input id="pizzaName" class="form-control" type="text" required>
         </div>
         <div class="form-group">
           <label for="pizzaSize">Size</label>
           <select id="pizzaSize" class="form-control">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
           </select>
         </div>
         <div class="form-group">
@@ -46,7 +43,7 @@
     </div>
     <div id="pizzaResult" class="group-std">
       <h3 class="text-center">Your Pizza</h3>
-      <p id="pizzaCost"></p>
+      <strong><p>Cost: </strong><span id="pizzaCost"></span></p>
     </div>
   </div>
 </body>
