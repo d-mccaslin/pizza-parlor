@@ -1,4 +1,4 @@
-// Business Logic for Pizza
+// Business Logic for ~ Pizza ~
 function Pizza(Size,toppings) {
   this.Size = Size,
   this.toppings = toppings
@@ -6,14 +6,12 @@ function Pizza(Size,toppings) {
 
 Pizza.prototype.cost = function() {
   const baseCost = this.Size.baseCost;
-  console.log(baseCost);
   const toppingCost = this.toppings.length * 2;
-  console.log(toppingCost);
   this.cost = baseCost + toppingCost;
-  console.log(this.cost);
+  return this.cost;
 }
 
-// Business Logic for Size
+// Business Logic for ~ Size ~
 function Size(name,baseCost) {
   this.name = name,
   this.baseCost = baseCost
@@ -28,9 +26,17 @@ sizes.push(smallSize);
 sizes.push(mediumSize);
 sizes.push(largeSize);
 
-// Business Logic for Topping
+// Business Logic for ~ Topping ~
 
 let toppings = ["pepperoni","basil","green peppers"];
+
+/*
+function Topping(name,cost) {
+  this.name = name,
+  this.cost = cost
+}
+*/
+
 
 
 // Tests
@@ -40,3 +46,9 @@ console.log(myPizza);
 myPizza.cost();
 
 
+
+/* Questions
+
+- parameter/variable names for objects - capitalized?
+
+*/
