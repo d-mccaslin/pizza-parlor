@@ -1,8 +1,8 @@
 # David McCaslin
 
-#### _{Brief description of application}, {Date of current version}_
+#### This application allows a user to select a size, toppings, and other aspects of a pizza and receive a calculated cost based on the user inputs
 
-#### By _**{List of contributors}**_
+#### By David McCaslin
 
 ## Description
 
@@ -10,42 +10,43 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* Find repository on GitHub or otherwise obtain repo link
+* Clone, fork, or otherwise download the project
+* Run the project through a local server, live server, directly in the browser, or any method of your choosing
+* The recommended editor for viewing the application is Visual Studio Code
 
 ## Specs
 
 * <strong>Spec: </strong>A user can select a size and list of toppings (including none or one) and receive a calculated price for the pizza.
-    * <strong>Input: </strong>
-    * <strong>Output: </strong>
+    * <strong>Input: </strong>  (Size,toppings)
+    * <strong>Output: </strong> $25.00
 * <strong>Spec: </strong>The calculated cost of a pizza will be impacted by the size of the pizza.
-    * <strong>Input: </strong>
-    * <strong>Output: </strong>
+    * <strong>Input: </strong>  ((mediumSize),toppings)
+    * <strong>Output: </strong> $30.00
 * <strong>Spec: </strong>The calculated cost of a pizza will be impaced by the amount (and type) of toppings.
-    * <strong>Input: </strong>
-    * <strong>Output: </strong>
+    * <strong>Input: </strong>  (Size,['pepperoni','basil','green peppers'])
+    * <strong>Output: </strong> $22.00
 
 ## Test
 
+* Please see <strong>Specs</strong> section above
+
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+There are no known bugs.
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Contact: davidmccaslin94@gmail.com
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* Languages: HTML, CSS, JavaScript
+* Libraries: Bootstrap, jQuery
+* Development Tools: Visual Studio Code, Git, GitHub
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+MIT Open Source
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2020 David McCaslin
