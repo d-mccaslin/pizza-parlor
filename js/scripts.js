@@ -1,12 +1,13 @@
 // Constructor for Pizza
-function Pizza(size,toppings) {
-  this.size = size,
+function Pizza(Size,toppings) {
+  this.Size = Size,
   this.topping = toppings,
 }
 
-Pizza.prototype.price = function() {
-  let baseCost;
+Pizza.prototype.cost = function() {
+  //let baseCost;
   const size = this.size;
+  /*
   if (size == "small") {
     baseCost = 10;
   } else if (size == "medium") {
@@ -14,8 +15,9 @@ Pizza.prototype.price = function() {
   } else if (size == "large") {
     baseCost = 20;
   }
+  */
   const toppingCost = this.toppings.length;
-  this.price = baseCost + toppingCost;
+  this.cost = this.Size.baseCost + toppingCost;
 }
 
 // Constructor for Size
