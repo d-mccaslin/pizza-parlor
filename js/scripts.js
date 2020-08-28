@@ -5,9 +5,9 @@ function Pizza(name,Size,toppings) {
   this.toppings = toppings
 }
 
-Pizza.prototype.cost = function() {
+Pizza.prototype.cost = function(sizeCost) {
   //const baseCost = this.Size.baseCost;
-  const baseCost = 10;
+  const baseCost = sizeCost;
   const toppingCost = this.toppings.length * 2;
   this.cost = baseCost + toppingCost;
   return this.cost;
@@ -43,17 +43,21 @@ function Topping(name,cost) {
 // UI Logic
 
 $(document).ready(function() {
+  const selectInput = $("select#pizzaSize");
+  sizes.forEach(function(size) {
+    selectInput.append("<option value=" + size.baseCost + ">" + size.name + "</option>");
+  });
+
+
   $("form#pizzaSelection").submit(function() {
     event.preventDefault();
     const pizzaName = $("input#pizzaName").val();
-    const pizzaSize = $("select#pizzaSize").val();
+    const pizzaSize = parseInt($("select#pizzaSize").val());
     let pizzaToppings = [];
     pizzaToppings.push($("input:radio[name=topping]:checked").val());
-    console.log(pizzaName);
-    console.log(pizzaSize);
-    console.log(pizzaToppings);
     const myPizza = new Pizza(pizzaName,pizzaSize,pizzaToppings);
-    $("#pizzaCost").text(myPizza.cost());
+    console.log(myPizza);
+    $("#pizzaCost").text(myPizza.cost(pizzaSize));
     $("#pizzaResult").show();
   })
 
