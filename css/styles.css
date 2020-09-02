@@ -8,3 +8,7 @@
 #pizzaResult {
   display: none;
 }
+
+.hidden {
+  display: none;
+}
