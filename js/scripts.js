@@ -58,6 +58,9 @@ $(document).ready(function() {
     const myPizza = new Pizza(pizzaName,pizzaSize,pizzaToppings);
     console.log(myPizza);
     $("#pizzaCost").text(myPizza.cost(pizzaSize));
+    $("#name").text(myPizza.name);
+    $("#size").text(myPizza.Size.name);
+    $("#toppins").text(myPizza.toppings);
     $("#pizzaResult").show();
   })
 
@@ -66,6 +69,7 @@ $(document).ready(function() {
 
 /* To Do
 
+- pass in actual Size object to list of options
 - basic ui with results displays
 - update topping BL
 - create your own topping?
