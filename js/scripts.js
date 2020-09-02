@@ -52,7 +52,8 @@ $(document).ready(function() {
   $("form#pizzaSelection").submit(function() {
     event.preventDefault();
     const pizzaName = $("input#pizzaName").val();
-    const pizzaSize = parseInt($("select#pizzaSize").val());
+    const pizzaSize = parseInt($("select#pizzaSize").val());\
+    console.log(pizzaSize);
     let pizzaToppings = [];
     pizzaToppings.push($("input:radio[name=topping]:checked").val());
     const myPizza = new Pizza(pizzaName,pizzaSize,pizzaToppings);
@@ -69,8 +70,6 @@ $(document).ready(function() {
 
 /* To Do
 
-- pass in actual Size object to list of options
-- basic ui with results displays
 - update topping BL
 - create your own topping?
 
