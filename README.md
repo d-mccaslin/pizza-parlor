@@ -6,7 +6,8 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+This application allows users to create a virtual pizza by selecting from several options. The application intakes user selections and calculates a price for the pizza based on the inputs. Pizzas objects are stored in the app upon creation and displayed in a results group on the main page.
+
 
 ## Setup/Installation Requirements
 
