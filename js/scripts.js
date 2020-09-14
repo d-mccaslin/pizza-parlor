@@ -5,11 +5,10 @@ function Pizza(name,Size,toppings) {
   this.toppings = toppings
 }
 
-Pizza.prototype.cost = function(sizeCost) {
-  const baseCost = sizeCost;
+Pizza.prototype.cost = function() {
+  const baseCost = this.Size;
   const toppingCost = this.toppings.length * 2;
   this.cost = baseCost + toppingCost;
-  return this.cost;
 }
 
 // Business Logic for ~ Size ~
@@ -46,7 +45,8 @@ $(document).ready(function() {
     let pizzaToppings = [];
     pizzaToppings.push($("input:radio[name=topping]:checked").val());
     const myPizza = new Pizza(pizzaName,pizzaSize,pizzaToppings);
-    $("#pizzaCost").text(myPizza.cost(pizzaSize));
+    myPizza.cost();
+    $("#pizzaCost").text(myPizza.cost);
     $("#name").text(myPizza.name);
     $("#size").text(myPizza.Size.name);
     $("#toppins").text(myPizza.toppings);
